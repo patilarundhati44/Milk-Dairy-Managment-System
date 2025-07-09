@@ -1,0 +1,39 @@
+
+class MilkProvider 
+
+{
+ int id;
+ String name, contact, address;
+
+ public MilkProvider(String name, String contact, String address) 
+ 
+ {
+     this.name = name; 
+     this.contact = contact; 
+     this.address = address;
+ }
+ 
+ public MilkProvider(int id, String name, String contact, String address) 
+ 
+ {
+     this(name, contact, address);
+     this.id = id;
+ }
+}
+
+class MilkRecord
+{
+ int providerId;
+ String date;
+ double quantity, fatContent, ratePerLitre;
+
+ public MilkRecord(int providerId, String date, double quantity, double fatContent, double ratePerLitre) 
+ 
+ {
+     this.providerId = providerId; 
+     this.date = date;
+     this.quantity = quantity;
+     this.fatContent = fatContent;
+     this.ratePerLitre = ratePerLitre;
+ }
+}
